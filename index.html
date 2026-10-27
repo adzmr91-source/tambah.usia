@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday FANI 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffe0eb, #fff5f8, #ffd1e1);
+  color: #a52d60;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.music-area {
+  position: relative;
+  z-index: 100;
+  padding: 22px 12px;
+  background: #ffe4ee;
+  border-bottom: 1px solid #ffc2d8;
+}
+
+.music-button {
+  padding: 15px 24px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff80ad, #e83e80);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px #e83e8030;
+}
+
+.music-status {
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+
+header {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-size: clamp(38px, 9vw, 58px);
+  color: #e34483;
+  margin: 12px 0;
+  text-shadow: 2px 3px 10px white;
+}
+
+h2 {
+  color: #d83c79;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.main-button {
+  padding: 13px 23px;
+  border: none;
+  border-radius: 30px;
+  background: #ec5b96;
+  color: white;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.section {
+  width: 92%;
+  max-width: 650px;
+  margin: 22px auto;
+  padding: 30px 20px;
+  border: 1px solid #ffffffcc;
+  border-radius: 25px;
+  background: #ffffffc9;
+  box-shadow: 0 8px 25px #d94e8218;
+}
+
+.date {
+  font-size: 23px;
+  font-weight: bold;
+  color: #e34483;
+  margin: 15px 0;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 16px auto;
+  border: 4px solid white;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px #d94e8230;
+}
+
+.letter {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 18px;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 1.9;
+}
+
+.heart {
+  position: fixed;
+  bottom: -35px;
+  pointer-events: none;
+  z-index: 0;
+  animation: naik linear forwards;
+}
+
+@keyframes naik {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.small {
+  font-size: 13px;
+  color: #a64b70;
+}
+
+footer {
+  padding: 35px 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIK -->
+<audio id="musikFani" loop preload="auto">
+  <source src="./musik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- TOMBOL MUSIK PALING ATAS -->
+<div class="music-area">
+  <button class="music-button" id="tombolMusik"
+    onclick="putarMusik()">
+    🎵 Putar Musik Untuk FANI 💗
+  </button>
+
+  <p class="music-status" id="statusMusik">
+    Putar musiknya dulu sebelum membaca pesan yaa 🌷
+  </p>
+</div>
+
+<div class="content">
+
+<header>
+  <div style="font-size:65px">🎂💗🎀</div>
+
+  <p>Untuk seseorang yang paling spesial...</p>
+
+  <h1>Happy Birthday<br>FANI</h1>
+
+  <p>
+    Selamat ulang tahun, nengku FANI 🌷<br>
+    Semoga hari spesialmu penuh kebahagiaan.
+  </p>
+
+  <button class="main-button" onclick="bukaSurat()">
+    💌 Buka Surat Rahasia
+  </button>
+
+  <p class="small">Dari seseorang yang selalu mendoakanmu 💗</p>
+</header>
+
+<section class="section">
+  <div style="font-size:45px">🎂🌸💗</div>
+  <h2>Hari Spesial Nengku</h2>
+
+  <div class="date">29 Oktober, 2026</div>
+
+  <p>
+    Hari istimewa untuk seseorang yang berarti.
+    Semoga semua harapan baikmu perlahan menjadi nyata.
+  </p>
+</section>
+
+<section class="section">
+  <h2>💌 Surat Kecil Untuk FANI</h2>
+
+  <p>Ada pesan yang ingin aku sampaikan dari hati...</p>
+
+  <div id="surat" class="letter">Untuk nengku FANI tersayang 💗
+
+Selamat ulang tahun, yaa.
+
+Terima kasih sudah hadir dan menjadi bagian indah dalam hidupku. Aku mungkin belum menjadi seseorang yang sempurna, tetapi aku ingin terus belajar menjadi lebih baik.
+
+Di hari spesialmu ini, aku berdoa semoga kamu selalu sehat, bahagia, dimudahkan dalam setiap urusan, dan dikelilingi orang-orang yang tulus menyayangimu.
+
+Semoga senyummu selalu punya alasan untuk kembali. Semoga kita bisa terus menciptakan banyak kenangan indah bersama.
+
+Sekali lagi, happy birthday, nengku FANI. 🎂💗
+
+Dengan penuh sayang,
+ROSI ADITYA 💌</div>
+</section>
+
+<section class="section">
+  <h2>📸 Kenangan Kita</h2>
+
+  
+<!-- VIDEO KENANGAN OTOMATIS -->
+<div style="margin-top:30px;">
+  <h2>🎬 Video Kenangan Kita 💗</h2>
+
+  <p>
+    Momen sederhana yang ingin selalu aku ingat bersamamu 🌷
+  </p>
+
+  <video
+    id="videoKenangan"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    style="
+      display:block;
+      width:100%;
+      max-width:450px;
+      margin:18px auto;
+      border:4px solid white;
+      border-radius:20px;
+      box-shadow:0 5px 18px #d94e8230;
+      background:#ffe0eb;
+    "
+  >
+    <source src="./video-kita.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video ini.
+  </video>
+
+  <p class="small">
+    Untuk nengku FANI, dari ROSI ADITYA 💕
+  </p>
+</div>
+
+  <p>Beberapa momen sederhana yang berarti buat aku.</p>
+  <h2>PERTAMA KALI POTOBOX🤭</h2>
+  <img class="photo"
+    src="foto/foto-kita-1.jpg"
+    alt="Foto kenangan pertama"
+    onerror="this.style.display='none'">
+<h2>pas study tour😚</h2>
+  <img class="photo"
+    src="foto/foto-kita-2.jpg"
+    alt="Foto kenangan kedua"
+    onerror="this.style.display='none'">
+  <h2>pas dipantai🌤🌊</h2>
+  <img class="photo"
+    src="foto/foto-kita-3.jpg"
+    alt="Foto kenangan kedua"
+    onerror="this.style.display='none'">
+
+  <h2>banyak banget ya momen yang kita lalui, dari bahagia, sedih, sampai hal-hal kecil yang akhirnya jadi kenangan. semoga semua ini bukan cuma cerita di masa lalu, tapi awal dari lebih banyak cerita indah yang akan kita lalui bersama. ❤️</h2>
+  
+    
+    Foto disimpan di folder foto dengan nama file yang sesuai.
+  </p>
+</section>
+
+<section class="section">
+  <h2>🌷 Doa Terbaik Untukmu</h2>
+
+  <p>
+    Semoga umur barumu membawa lebih banyak kebahagiaan,
+    kesehatan, keberanian, dan kesempatan untuk meraih impian.
+    Semoga hal-hal baik selalu menemukan jalan menuju dirimu.
+  </p>
+
+  <div style="font-size:38px">💗🧸🌸</div>
+</section>
+
+<footer>
+  <h2>With Love, FANI 💗</h2>
+  <p>Made with love by ROSI ADITYA</p>
+  <p>Happy Birthday, nengku! 🎂</p>
+</footer>
+
+</div>
+
+<script>
+// MEMUTAR DAN MENGHENTIKAN MUSIK
+async function putarMusik() {
+  const musik = document.getElementById("musikFani");
+  const tombol = document.getElementById("tombolMusik");
+  const status = document.getElementById("statusMusik");
+
+  if (musik.paused) {
+    try {
+      await musik.play();
+      tombol.textContent = "⏸️ Jeda Musik";
+      status.textContent = "Musik sedang diputar untuk nengku 💗";
+
+    } catch (error) {
+      status.textContent =
+        "Musik gagal diputar. Periksa file musik.mp3 yaa.";
+
+      console.error("Musik gagal diputar:", error);
+    }
+  } else {
+    musik.pause();
+    tombol.textContent = "🎵 Putar Musik Untuk FANI 💗";
+    status.textContent = "Musik dijeda.";
+  }
+}
+
+// MEMBUKA SURAT
+function bukaSurat() {
+  const surat = document.getElementById("surat");
+
+  surat.style.display = "block";
+
+  surat.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+// ANIMASI HATI MELAYANG
+function buatHati() {
+  const hati = document.createElement("div");
+
+  hati.className = "heart";
+  hati.textContent = ["💗", "💕", "💖", "🌸", "💘"][
+    Math.floor(Math.random() * 5)
+  ];
+
+  hati.style.left = Math.random() * 100 + "vw";
+  hati.style.fontSize = (15 + Math.random() * 20) + "px";
+  hati.style.animationDuration = (4 + Math.random() * 5) + "s";
+
+  document.body.appendChild(hati);
+
+  setTimeout(() => hati.remove(), 9000);
+}
+
+setInterval(buatHati, 450);
+</script>
+
+</body>
+</html>
